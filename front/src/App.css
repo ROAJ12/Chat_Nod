@@ -1,0 +1,88 @@
+@keyframes smooth-appear {
+  to{
+    bottom: 20px;
+    opacity:1;
+  }
+}
+
+body{
+  background-color: rgb(35, 45, 63);
+}
+
+.chat{
+    padding: 30px;     
+    box-shadow: 8px 8px 35px 0px rgb(15, 15, 15);        
+    border: 3px solid rgb(15, 15, 15);
+    margin: 2rem;    
+    border-radius: 20px;
+    background-color: rgb(0, 129, 112);  
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('images/message_icon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+.form input[type=text]:focus {
+  width: 80%;
+}
+
+.form button {
+  margin-left: 2%;
+  position: relative;
+  background-color: #ffffff;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  width: 18%;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.form button:after {
+  content: "";
+  background: #640505;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.form button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+
